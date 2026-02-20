@@ -1,0 +1,256 @@
+:root {
+  --primary-blue: #2563eb;
+  --dark-bg: #0b0e14;
+  --green: #10b981;
+  --text-main: #1f2937;
+  --text-light: #6b7280;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+.navbar {
+  background: var(--dark-bg);
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-box {
+  background: var(--primary-blue);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.nav-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: var(--white);
+}
+.nav-links a.high-school {
+  color: var(--green);
+}
+
+.btn-apply {
+  background: var(--primary-blue);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hero {
+  background: var(--dark-bg);
+  color: white;
+  text-align: center;
+  padding: 100px 15%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.highlight {
+  color: var(--primary-blue);
+}
+.hero p {
+  color: #9ca3af;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.story-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  padding: 100px 10%;
+  align-items: center;
+}
+
+.story-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.story-content p {
+  margin-bottom: 20px;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.story-card {
+  background: #f3f4f6;
+  padding: 40px;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.story-card blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin: 20px 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.avatar {
+  background: #dbeafe;
+  color: var(--primary-blue);
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 800;
+}
+.values-section {
+  padding: 100px 10%;
+  background: #fff;
+}
+.center-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.center-sub {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 60px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.value-card {
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+.value-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+.value-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.main-footer {
+  background: var(--dark-bg);
+  color: #fff;
+  padding: 80px 8% 40px 8%;
+  border-top: 1px solid #1f2937;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.footer-brand p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.footer-col h4 {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.footer-col a {
+  display: block;
+  color: #9ca3af;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.footer-col a:hover {
+  color: var(--white);
+}
+
+.footer-col p {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+.green-link {
+  color: var(--green) !important;
+  font-weight: 700;
+}
+
+.hours {
+  margin-top: 15px;
+  font-size: 0.75rem;
+  color: #4b5563;
+  line-height: 1.8;
+}
+@media (max-width: 992px) {
+  .story-section {
+    grid-template-columns: 1fr;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
